@@ -19,3 +19,47 @@
     padding: 0.5rem;
 
 }
+.color-selector-menu{
+
+    display: none;
+    gap: 1rem;
+    background-color: black;
+    width: min-content;
+    padding: 0.5rem;
+    border-radius: 0.1rem;
+}
+.show-color-selector-menu{
+    display: flex;
+}
+.red-select{
+    background-color: red;
+    color: red;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+}
+.green-select{
+    background-color: green;
+    color: green;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid green;
+}
+.yellow-select{
+    background-color: yellow;
+    color: yellow;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid yellow;
+}
+.pink-select{
+    background-color: pink;
+    color: pink;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid pink;
+}

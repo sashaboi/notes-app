@@ -4,14 +4,18 @@ import './index.css';
 import App from './App';
 import {BrowserRouter as Router} from 'react-router-dom'
 import {NoteProvider} from './context/NoteContext'
+import {ModalProvider} from './context/ModalContext'
 ReactDOM.render(
   <React.StrictMode>
    
     <Router>
-    <NoteProvider>
-      <App />
-    </NoteProvider>
+      <ModalProvider>
+        <NoteProvider>
+          <App />
+        </NoteProvider>
+      </ModalProvider>
     </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
