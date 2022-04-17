@@ -1,0 +1,21 @@
+.create-note-parent{
+    
+    background-color: aquamarine;
+}
+.create-note-section{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+.create-note-section input{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.create-note-section button{
+    padding: 0.5rem;
+
+}
