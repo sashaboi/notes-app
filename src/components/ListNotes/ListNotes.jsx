@@ -8,7 +8,7 @@ const ListNotes = () => {
     const {notes} = useNote();
   return (
     <div className='list-notes-parent'>
-        <h1>List Notes</h1>
+        <h1>List Notes </h1>
         <div className='notes-container'>
             <div className='pinned-notes-list notes-list-common'>
                 Pinned Notes : 
