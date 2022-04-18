@@ -4,9 +4,9 @@ import HomePage from './components/Homepage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import Archive from './components/Archive/Archive';
 import Trash from './components/Trash/Trash';
-function App() {
+const App =()=> {
   return (
-    <div className="App">
+    <div>
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />

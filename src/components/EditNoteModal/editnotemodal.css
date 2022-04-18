@@ -11,3 +11,18 @@
 .edit-notes-parent input{
     padding: 1rem;
 }
+.edit-note-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-note-cancel{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+.edit-note-cancel:hover{
+    cursor: pointer;
+}

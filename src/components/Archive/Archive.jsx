@@ -8,13 +8,14 @@ import Modal from '../modal/Modal';
 const Archive = () => {
     const {notes} = useNote();
     console.log(notes)
+    const archivedNotes = notes.filter((obj)=>obj.archive===true)
   return (
     <div className='app-container'>
       <Modal/>
        <div className='sidebar-container'><SideBar/></div>
        <div className='note-side-container'>
          Archived notes
-         {notes.length&&notes.map((obj)=>obj.archive&&<NoteCard key={uuid()} noteobj={obj}/>)}
+         {notes.length&&archivedNotes.map((obj)=><NoteCard key={uuid()} noteobj={obj}/>)}
          
          
        </div>
