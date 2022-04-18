@@ -1,23 +1,23 @@
 import './App.css';
-import ListNotes from './components/ListNotes/ListNotes';
-import CreateNote  from './components/CreateNote/CreateNote';
-import SideBar from './components/SideBar/SideBar';
+import { Routes,Route } from 'react-router-dom';
+import HomePage from './components/Homepage/HomePage';
 import Navbar from './components/Navbar/Navbar';
-import EditNoteModal from './components/EditNoteModal/EditNoteModal';
-function App() {
+import Archive from './components/Archive/Archive';
+import Trash from './components/Trash/Trash';
+const App =()=> {
   return (
-    <div className="App">
+    <div>
       <Navbar/>
-     <div className='app-container'>
-       <div className='sidebar-container'><SideBar/></div>
-       <div className='note-side-container'>
-         <CreateNote/>
-         <ListNotes/>
-         <EditNoteModal/>
-       </div>
-     </div>
-       
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/archive" element={<Archive />} />
+        <Route path="/trash" element={<Trash />} />
+        
+      
+      </Routes>
+      
     </div>
+    
   );
 }
 
